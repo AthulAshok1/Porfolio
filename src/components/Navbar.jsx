@@ -34,7 +34,7 @@ export default function Navbar({ activeSection, scrolled }) {
               </a>
             ))}
           </div>
-          <button
+          {/* <button
             className="mobile-menu-btn"
             type="button"
             aria-label={mobileOpen ? 'Close navigation menu' : 'Open navigation menu'}
@@ -43,7 +43,60 @@ export default function Navbar({ activeSection, scrolled }) {
             onClick={() => setMobileOpen((open) => !open)}
           >
             <i className={`fas ${mobileOpen ? 'fa-times' : 'fa-bars'}`}></i>
-          </button>
+          </button> */}
+          {/* Mobile Menu Button */}
+<button
+  className="mobile-menu-btn"
+  type="button"
+  aria-label={mobileOpen ? 'Close navigation menu' : 'Open navigation menu'}
+  aria-controls="nav-links"
+  aria-expanded={mobileOpen}
+  onClick={() => setMobileOpen((open) => !open)}
+>
+  <i
+    className={`fas ${mobileOpen ? 'fa-times' : 'fa-bars'}`}
+  ></i>
+</button>
+
+
+{/* Mobile Navigation Menu */}
+{mobileOpen && (
+  <div className="mobile-nav-menu" id="nav-links">
+
+    <a href="#home" onClick={() => setMobileOpen(false)}>
+      Home
+    </a>
+
+    <a href="#about" onClick={() => setMobileOpen(false)}>
+      About
+    </a>
+
+    <a href="#education" onClick={() => setMobileOpen(false)}>
+      Education
+    </a>
+
+    <a href="#skills" onClick={() => setMobileOpen(false)}>
+      Skills
+    </a>
+
+    <a href="#projects" onClick={() => setMobileOpen(false)}>
+      Projects
+    </a>
+
+    <a href="#experience" onClick={() => setMobileOpen(false)}>
+      Experience
+    </a>
+
+    <a href="#certifications" onClick={() => setMobileOpen(false)}>
+      Certifications
+    </a>
+
+    <a href="#contact" onClick={() => setMobileOpen(false)}>
+      Contact
+    </a>
+
+  </div>
+)}
         </div>
       </nav>
   );
