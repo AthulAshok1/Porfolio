@@ -2020,19 +2020,28 @@ grid-template-columns:repeat(2,1fr);
         overflow: hidden;
     }
 
+   
+@media (max-width: 768px) {
+
     .about-right h3 {
         width: 100%;
         max-width: 100%;
         min-width: 0;
 
-        font-size: 30px;
-         
+        font-size: 32px;
         line-height: 1.3;
 
         text-align: center;
 
-        overflow-wrap: anywhere;
+        /* PREVENT WORDS FROM BREAKING */
+        word-break: keep-all !important;
+        overflow-wrap: normal !important;
+        white-space: normal !important;
+
+        margin: 0 auto 20px;
     }
+
+}
 
     .about-right p {
         width: 100%;
