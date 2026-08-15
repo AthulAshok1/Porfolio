@@ -49,16 +49,13 @@ export default function About() {
 
                 </span>
 
-                <h3>
-
-                    Passionate About Building
-
-                    <span>Scalable</span>
-
-                    Software Solutions
-
-                </h3>
-
+               <h3>
+  Passionate About
+  <br />
+  Building <span>Scalable</span>
+  <br />
+  Software Solution
+</h3>
                 <div className="title-line"></div>
 
                 <p>
