@@ -30,7 +30,18 @@ export default function Projects() {
                                 <span>Django</span>
                                 <span>Machine Learning</span>
                                 <span>MySQL</span>
+                                <a
+  href="https://github.com/AthulAshok1/PHISHING-DETECTION"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="project-btn github-btn"
+>
+  <i className="fab fa-github"></i>
+  GitHub
+</a>
                             </div>
+
+                            
 
                         </div>
                     </article>
@@ -57,6 +68,15 @@ export default function Projects() {
                                 <span>Django</span>
                                 <span>MySQL</span>
                                 <span>HTML/CSS/JS</span>
+                                                            <a
+  href="https://github.com/Aswins-10/E-Gramaportal"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="project-btn github-btn"
+>
+  <i className="fab fa-github"></i>
+  GitHub
+</a>
                             </div>
 
                         </div>
@@ -85,6 +105,15 @@ export default function Projects() {
     <span>HTML</span>
     <span>CSS</span>
     <span>MySQL</span>
+                                <a
+  href="https://github.com/AthulAshok1/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="project-btn github-btn"
+>
+  <i className="fab fa-github"></i>
+  GitHub
+</a>
 </div>
                          
                         </div>

@@ -2523,242 +2523,466 @@ padding:6px 12px;
 
 /*=================================
 TECHNICAL SKILLS
-==================================*/
+/* ==================================*/
 
+/* =========================================================
+   SKILLS SECTION
+========================================================= */
 
-.section-subtitle{
+/* Section Subtitle */
 
-    max-width:720px;
+.section-subtitle {
 
-    margin:15px auto 50px;
+    max-width: 720px;
 
-    text-align:center;
+    margin: 15px auto 50px;
 
-    color:#94A3B8;
+    text-align: center;
 
-    font-size:17px;
+    color: #94A3B8;
 
-    line-height:1.8;
+    font-size: 17px;
 
-    font-weight:400;
+    line-height: 1.8;
 
-}
-/* Tabs */
-
-.skill-tabs{
-
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:15px;
-    margin-bottom:40px;
+    font-weight: 400;
 
 }
 
-.tab-btn{
 
-    padding:14px 28px;
-    border:none;
-    outline:none;
-    border-radius:50px;
-    background:rgba(255,255,255,.05);
-    color:#CBD5E1;
-    cursor:pointer;
-    transition:.35s;
-    font-size:15px;
-    font-weight:600;
-    border:1px solid rgba(255,255,255,.08);
+/* =========================================================
+   SKILL TABS
+========================================================= */
 
-}
+.skill-tabs {
 
-.tab-btn i{
+    display: flex;
 
-    margin-right:8px;
+    justify-content: center;
 
-}
+    align-items: center;
 
-.tab-btn:hover{
+    flex-wrap: wrap;
 
-    background:rgba(59,130,246,.15);
-    color:#3B82F6;
+    gap: 15px;
+
+    margin-bottom: 40px;
 
 }
 
-.tab-btn.active{
 
-    background:linear-gradient(135deg,#3B82F6,#2563EB);
-    color:#fff;
-    box-shadow:0 10px 25px rgba(59,130,246,.25);
+/* Tab Button */
 
-}
+.tab-btn {
 
-/* Main Box */
+    padding: 14px 28px;
 
-.skills-box{
+    border: 1px solid rgba(255,255,255,.08);
 
-    padding:45px;
-    border-radius:20px;
-    min-height:300px;
+    outline: none;
 
-}
+    border-radius: 50px;
 
-/* Grid */
+    background: rgba(255,255,255,.05);
 
-.tab-content{
+    color: #CBD5E1;
 
-    display:none;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
-    animation:fade .4s ease;
+    cursor: pointer;
 
-}
+    transition: .35s;
 
-.tab-content.active{
+    font-size: 15px;
 
-    display:grid;
+    font-weight: 600;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
 
 }
 
-/* Card */
 
-.skill-card{
+/* Tab Icon */
 
-    background:rgba(255,255,255,.04);
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:18px;
-    padding:25px 25px;
-    text-align:center;
-    transition:.35s;
-    cursor:pointer;
+.tab-btn i {
+
+    margin-right: 8px;
 
 }
 
-.skill-card:hover{
 
-    transform:translateY(-8px);
-    border-color:#3B82F6;
-    box-shadow:0 18px 35px rgba(59,130,246,.18);
+/* Hover */
 
-}
+.tab-btn:hover {
 
-.skill-card i{
+    background: rgba(59,130,246,.15);
 
-    font-size:28px;
-    color:#3B82F6;
-    margin-bottom:20px;
-    transition:.35s;
+    color: #3B82F6;
+
+    border-color: rgba(59,130,246,.30);
+
+    transform: translateY(-2px);
 
 }
 
-.skill-card:hover i{
 
-    transform:scale(1.1) rotate(-8deg);
-    color:#60A5FA;
+/* Active Tab */
 
-}
+.tab-btn.active {
 
-.skill-card h4{
+    background: linear-gradient(
+        135deg,
+        #3B82F6,
+        #2563EB
+    );
 
-    font-size:22px;
-    margin-bottom:10px;
-    font-weight:600;
+    color: #fff;
 
-}
+    border-color: transparent;
 
-.skill-card span{
-
-    display:inline-block;
-    padding:7px 16px;
-    border-radius:30px;
-    background:rgba(59,130,246,.12);
-    color:#60A5FA;
-    font-size:14px;
-    font-weight:500;
+    box-shadow:
+        0 10px 25px rgba(59,130,246,.25);
 
 }
 
-/* Animation */
 
-@keyframes fade{
+/* Active Tab Hover */
 
-from{
+.tab-btn.active:hover {
 
-opacity:0;
-transform:translateY(20px);
+    background: linear-gradient(
+        135deg,
+        #3B82F6,
+        #2563EB
+    );
 
-}
+    color: #fff;
 
-to{
-
-opacity:1;
-transform:translateY(0);
-
-}
+    transform: translateY(-2px);
 
 }
 
-/* Responsive */
 
-@media(max-width:992px){
+/* =========================================================
+   MAIN SKILLS BOX
+========================================================= */
 
-.skills-box{
+.skills-box {
 
-padding:30px;
+    padding: 45px;
 
-}
+    border-radius: 20px;
 
-.tab-content{
-
-grid-template-columns:repeat(2,1fr);
-
-}
+    min-height: 300px;
 
 }
 
-@media(max-width:768px){
 
-.skill-tabs{
+/* =========================================================
+   TAB CONTENT
+========================================================= */
 
-gap:10px;
+/*
+   React controls which tab has the "active" class.
 
-}
+   Inactive:
+   display: none;
 
-.tab-btn{
+   Active:
+   display: grid;
+*/
 
-padding:12px 18px;
-font-size:14px;
+.tab-content {
 
-}
+    display: none;
 
-.skills-box{
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
 
-padding:25px;
+    gap: 25px;
 
-}
-
-.tab-content{
-
-grid-template-columns:1fr;
-
-}
-
-.skill-card{
-
-padding:30px 20px;
+    animation: fade .4s ease;
 
 }
 
-.skill-card h4{
 
-font-size:20px;
+/* Active Tab Content */
+
+.tab-content.active {
+
+    display: grid;
+
+}
+
+
+/* =========================================================
+   SKILL CARD
+========================================================= */
+
+.skill-card {
+
+    background: rgba(255,255,255,.04);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    transition: .35s;
+
+    cursor: pointer;
 
 }
 
-.skill-card i{
 
-font-size:40px;
+/* Skill Card Hover */
+
+.skill-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #3B82F6;
+
+    box-shadow:
+        0 18px 35px rgba(59,130,246,.18);
 
 }
+
+
+/* =========================================================
+   SKILL ICON
+========================================================= */
+
+.skill-card i {
+
+    display: block;
+
+    font-size: 28px;
+
+    color: #3B82F6;
+
+    margin-bottom: 20px;
+
+    transition: .35s;
+
+}
+
+
+/* Icon Hover */
+
+.skill-card:hover i {
+
+    transform:
+        scale(1.1)
+        rotate(-8deg);
+
+    color: #60A5FA;
+
+}
+
+
+/* =========================================================
+   SKILL TITLE
+========================================================= */
+
+.skill-card h4 {
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+
+    font-weight: 600;
+
+    color: #fff;
+
+}
+
+
+/* =========================================================
+   SKILL LEVEL
+========================================================= */
+
+.skill-card span {
+
+    display: inline-block;
+
+    padding: 7px 16px;
+
+    border-radius: 30px;
+
+    background: rgba(59,130,246,.12);
+
+    color: #60A5FA;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+}
+
+
+/* =========================================================
+   TAB FADE ANIMATION
+========================================================= */
+
+@keyframes fade {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* =========================================================
+   TAB CLICK FEEDBACK
+========================================================= */
+
+.tab-btn:active {
+
+    transform: scale(.97);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .skills-box {
+
+        padding: 30px;
+
+    }
+
+    .tab-content {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .skill-tabs {
+
+        gap: 10px;
+
+        margin-bottom: 30px;
+
+    }
+
+
+    .tab-btn {
+
+        padding: 12px 18px;
+
+        font-size: 14px;
+
+    }
+
+
+    .skills-box {
+
+        padding: 25px;
+
+    }
+
+
+    .tab-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .skill-card {
+
+        padding: 30px 20px;
+
+    }
+
+
+    .skill-card h4 {
+
+        font-size: 20px;
+
+    }
+
+
+    .skill-card i {
+
+        font-size: 40px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .skill-tabs {
+
+        flex-direction: column;
+
+        width: 100%;
+
+    }
+
+
+    .tab-btn {
+
+        width: 100%;
+
+        max-width: 300px;
+
+    }
+
+
+    .skills-box {
+
+        padding: 20px;
+
+    }
+
+
+    .skill-card {
+
+        padding: 25px 15px;
+
+    }
 
 }
 /*=========================================
@@ -3051,6 +3275,82 @@ font-size:21px;
 
 }
 
+}
+
+/* =========================================================
+   PROJECT BUTTONS
+========================================================= */
+
+.project-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+
+/* Common button style */
+
+.project-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    padding: 10px 18px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: .35s;
+
+    cursor: pointer;
+}
+
+
+/* GitHub button */
+
+.github-btn {
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    color: #ffffff;
+}
+
+
+/* GitHub icon */
+
+.github-btn i {
+    font-size: 17px;
+
+    transition: .35s;
+}
+
+
+/* Hover */
+
+.github-btn:hover {
+    background: #2563EB;
+
+    color: #111827;
+
+    border-color: #ffffff;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(255, 255, 255, 0.15);
+}
+
+
+/* Icon hover */
+
+.github-btn:hover i {
+    transform: scale(1.1);
 }
 /* =========================================
    TIMELINE
