@@ -666,19 +666,12 @@ transform:translateY(0);
     }
 }
 
-
- .hero-description{
-
-    max-width:620px;
-
-    font-size:18px;
-
-    line-height:2;
-
-    color:#CBD5E1;
-
-    margin-bottom:42px;
-
+.hero-description {
+    max-width: 620px;
+    font-size: 18px;
+    line-height: 2;
+    color: #CBD5E1;
+    margin-bottom: 42px;
 }
 
 .hero-buttons .btn{
